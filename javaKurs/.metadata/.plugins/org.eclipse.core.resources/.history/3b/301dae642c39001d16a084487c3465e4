@@ -1,0 +1,35 @@
+package stringsDemo;
+
+public class Main {
+
+	public static void main(String[] args) {
+		String mesaj = "Bugün hava çok güzel.";
+		System.out.println(mesaj);
+		
+		System.out.println("Eleman sayýsý : " + mesaj.length()); // String olarak tanýmladýgýmýz mesaj 'ýn içinde kaç eleman olduðunu buluruz.
+		System.out.println("5. eleman : " + mesaj.charAt(4)); // mesaj 'ýn içerisindeki 5. elemaný buluruz. 0 dan baþladýðý için 4 yazdýk.
+		System.out.println(mesaj.concat(" Yaþasýn!")); // ilk mesaj ile burda yazdýðýmýz mesajý birleþtirir.
+		System.out.println(mesaj.startsWith("B")); // mesaj B ile baþlýyorusa true yazar. Baþlamýyorsa false yazar. Harfin büyük veya küçük olmasý önemlidir. küçük yazarsak false döndürür.
+		System.out.println(mesaj.endsWith(".")); // mesajýn . ile bitip bitmediðine bakar. Eðer bitiyorsa true yazar, bitmiyorsa false yazar.
+		char[] karakterler = new char[5];
+		mesaj.getChars(0, 5, karakterler, 0); // mesajýmýzýn içerisinden elemanlarý almak için kullanýrýz. Ýlk kýsma 0 yazdýk çünkü 0. elemandan baþlayarak almak istedik. Ýkinci kýsýma 5 yazdýk çünkü 5. elemana kadar almak istedik. 3. kýsma karakterler yazdýk çünkü üstte char olarak bir karakterler dizisi oluþturduk. Aldýðýmýz elemanlarý bu dizinin içerisindeki elemanlarýn yerine yazýyoruz. En son kýsma yazdýðýmýz 0 ile oluþturduðumuz karakterler dizisine aktaracaðýmýz elemanlarý dizinin kaçýncý elemanýndan baþlayarak aktaracaðýmýzý seçiyoruz. 
+		System.out.println(karakterler);
+		System.out.println(mesaj.indexOf("av")); // mesajýn içerisindeki av'ýn kaçýncý eleman olduðunu yazar.
+		System.out.println(mesaj.lastIndexOf("e")); // e harfini mesajýn içinde arar ama aramaya sondan baþlar ve harfin sýrasýný baþtan kaçýncý ise onu yazar. Örneðin indexOf da a yý aratýrsak 7 çýktýsýný verir. Ama lastÝndexOf da a 'yý aratýrsak sondan geldiði için 9 çýktýsýný verir.
+		
+		
+		String yeniMesaj = mesaj.replace(' ', '-'); // // ilk yazdýðýmýz tek týrnaklarýn arasýndaki harf yerine ikinci kýsýmdaki tek týrnagýn içindeki harfi yazar.
+		System.out.println(yeniMesaj);
+		System.out.println(mesaj.substring(2)); // mesajý 2. elemandan itibaren baþlayarak yazar.
+		System.out.println(mesaj.substring(2, 5)); // mesajýn 2. elemanýndan baþlar 5. elemanýna kadar yazar.(4 dahil deðildir.)
+		
+		for(String kelime : mesaj.split(" ")) { // mesajý boþluk olan kýsýmlardan parçalar ve alt alta yazar.
+			System.out.println(kelime);
+		}
+		
+		System.out.println(mesaj.toLowerCase()); // mesajdaaki tüm harfleri küçültür ve öyle yazar.
+		System.out.println(mesaj.toUpperCase()); // mesajdaki tüm harfleri büyülterek yazar.
+	}
+	
+
+}

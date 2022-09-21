@@ -1,0 +1,16 @@
+package loopDemo;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		// 1 den 10'a kadar olan sayýlarý yazdýrmak için
+		
+		for (int i = 1; i <= 10; i++) {
+			System.out.println(i);
+		}
+		System.out.println("Döngü Bitti");
+
+	}
+
+}

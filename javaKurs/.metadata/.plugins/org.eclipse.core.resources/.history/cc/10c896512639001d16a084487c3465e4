@@ -1,0 +1,20 @@
+package stringsDemo;
+
+public class Main {
+
+	public static void main(String[] args) {
+		String mesaj = "Bugün hava çok güzel.";
+		System.out.println(mesaj);
+		
+		System.out.println("Eleman sayýsý : " + mesaj.length()); // String olarak tanýmladýgýmýz mesaj 'ýn içinde kaç eleman olduðunu buluruz.
+		System.out.println("5. eleman : " + mesaj.charAt(4)); // mesaj 'ýn içerisindeki 5. elemaný buluruz. 0 dan baþladýðý için 4 yazdýk.
+		System.out.println(mesaj.concat(" Yaþasýn!")); // ilk mesaj ile burda yazdýðýmýz mesajý birleþtirir.
+		System.out.println(mesaj.startsWith("B")); // mesaj B ile baþlýyorusa true yazar. Baþlamýyorsa false yazar. Harfin büyük veya küçük olmasý önemlidir. küçük yazarsak false döndürür.
+		System.out.println(mesaj.endsWith(".")); // mesajýn . ile bitip bitmediðine bakar. Eðer bitiyorsa true yazar, bitmiyorsa false yazar.
+		char[] karakterler = new char[5];
+		mesaj.getChars(0, 4, karakterler, 0);
+		System.out.println(karakterler);
+
+	}
+
+}

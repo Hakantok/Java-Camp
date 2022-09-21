@@ -1,0 +1,48 @@
+package arraysDemo;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		String ogrenci1 = "Engin";
+		String ogrenci2 = "Derin";
+		String ogrenci3 = "Salih";
+		String ogrenci4 = "Ahmet";
+		
+		System.out.println(ogrenci1);
+		System.out.println(ogrenci2);
+		System.out.println(ogrenci3);
+		System.out.println(ogrenci4);
+		
+		
+		// Yukarýda tüm bilgiler println ile tek tek yazdýrýyoruz. Ama burada 4 bilgi var ya 1000 olsaydý ne olacakdý?
+		
+		System.out.println("------------------------------");
+		
+		// -------------------------------------
+		
+		String[] ogrenciler = new String[4];
+		ogrenciler[0] = "Engin";
+		ogrenciler[1] = "Derin";
+		ogrenciler[2] = "Salih";
+		ogrenciler[3] = "Ahmet";
+		
+		for (int i = 0; i < ogrenciler.length; i++) {
+			System.out.println(ogrenciler[i]);
+		}
+		
+		// println ile 1000 tane kod olursa nasýl yazcaz diye düþünmüþtük. Bu noktada bir dizi tanýmlýyoruz ve içine dizinin hangi elemanýnda hangi bilginin saklý olduðunu yazýyoruz. Daha sonra for döngüsü içerisinde int bir i deðeri tanýmlýyoruz ve bunu 0 dan baþlatýp bizim dizimizin uzunlugunun 1 eksik deðerine kadar 1 er 1 er artýrýyoruz. Dizimizin uzunlugunu length komutu ile buluyoruz. Bu kurallara göre for döngüsünün içerisine giriyor ve sýrasýyla dizimizin elemanlarýný yazdýrýyoruz. 
+		
+		System.out.println("------------------------------");
+		
+		// -------------------------------------
+		// Alttaki þekilde de ögrenciler dizisi içerisindeki öðrencileri gez ve bunlarý yazdýr demek istiyoruz.
+		
+		for(String ogrenci : ogrenciler) {
+			System.out.println(ogrenci);
+		}
+		
+		
+	}
+
+}

@@ -1,0 +1,34 @@
+package miniProjeAsalSayi;
+
+public class Main {
+
+	public static void main(String[] args) {
+		int number = 25;
+		int remainder = number % 2; // number'daki sayýnýn 2 ye bölümünden kalan neyse remainder ona eþittir.
+		boolean isPrime = true;
+		
+		if(number == 1) { 
+			System.out.println("Sayý asal deðildir");
+			return; // burdan sonraki kodlarýn çalýþmamasýný saðlar.
+		}
+		
+		if(number < 1) {
+			System.out.println("Geçersiz sayý");
+			return; // burdan sonraki kodlarýn çalýþmamasýný saðlar.
+		}
+		
+		for(int i=2; i<number; i++) { // i deðerini 2 den baþlatarak tanýmladýðýmýz number deðerinden bir önceki sayýya kadar 1 er 1 er artýrýyoruz.
+			if(number % i == 0) { // number deðerinin i deðerine bölümünden kalan 0 ise if 'in içine girer ve isPrime deðerini false yapar.
+				isPrime = false;
+			}
+		}
+		
+		if(isPrime) { // burada isPrime deðeri true kabul edilir.
+			System.out.println("Sayý asaldýr");
+		}else {
+			System.out.println("Sayý asal deðildir");
+		}
+
+	}
+
+}

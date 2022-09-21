@@ -1,0 +1,30 @@
+package sesliHarfler;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		String harf = "k";
+		
+		String[] inceSesliHarf = {"e","i","ö","ü"};
+		String[] kalýnSesliHarf = {"a","ý","o","u"};
+		
+		for(int i=0; i < inceSesliHarf.length; i++) {
+				if(harf == inceSesliHarf[i]) {
+					System.out.println(harf + " : Ýnce sesli bir harftir.");
+					return;
+				}
+			}
+		
+		for(int i=0; i < kalýnSesliHarf.length; i++) {
+				if(harf == kalýnSesliHarf[i]) {
+					System.out.println(harf + " : Kalýn sesli bir harftir.");
+					return;
+				}
+			}
+		
+		System.out.println(harf + " : Bu sesli bir harf deðildir.");
+
+	}
+
+}

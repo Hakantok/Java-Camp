@@ -1,0 +1,36 @@
+package sesliHarfler;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		String harf = "M";
+		
+		String[] inceSesliHarf = {"e","E","Ý","i","Ö","ö","Ü","ü"};
+		String[] kalýnSesliHarf = {"a","A","I","ý","O","o","U","u"};
+		
+		
+		
+		for(int i=0; i < inceSesliHarf.length; i++) { // dizinin uzunlugunu alýyoruz. i yi 0 dan baþlatýp inceSesliHarf dizisinin eleman sayýsýnýn bir eksigi olana kadar artýrýyoruz.
+				
+				if(harf == inceSesliHarf[i]) {
+					System.out.println(harf + " ince sesli bir harftir.");
+					return;
+				}
+				
+			}
+		
+		for(int i=0; i < kalýnSesliHarf.length; i++) {
+				
+				if(harf == kalýnSesliHarf[i]) {
+					System.out.println(harf + " kalýn sesli bir harftir.");
+					return;
+				}
+				
+			}
+		
+		System.out.println(harf.toLowerCase() + " sesli bir harf deðildir.");
+
+	}
+
+}
