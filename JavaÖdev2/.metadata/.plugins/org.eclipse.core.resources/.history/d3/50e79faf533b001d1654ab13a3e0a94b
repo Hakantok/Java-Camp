@@ -1,0 +1,15 @@
+public class Product {
+	
+	// Solid Prensibi => Tek sorumluluk prensibidir. Burada bir class sadece bir iþi yapar, bir metod sadece bir iþi yapar.
+	// Aþaðýdaki þekilde biz bu isimlerin baþýna herhangi bir þey yazmazsak public olarak atamýþ oluruz. Public demek her yerden eriþilebilir olmaktýr.
+	// Biz deðerleri public deðilde private yaparsak sadece bulunduðu bloktan geçerli olur.
+	// Bunlara attiribute veya field diyebiliriz.
+	
+	private int id;
+	private String name;
+	private String description;
+	private double price;
+	private int stockAmount;
+	private String renk;
+	private String kod;
+}

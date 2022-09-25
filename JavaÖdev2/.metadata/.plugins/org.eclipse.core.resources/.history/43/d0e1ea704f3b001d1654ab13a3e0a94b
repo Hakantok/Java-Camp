@@ -1,0 +1,11 @@
+public class Product {
+	
+	// Solid Prensibi => Tek sorumluluk prensibidir. Burada bir class sadece bir iþi yapar, bir metod sadece bir iþi yapar.
+	
+	// Bunlara attiribute veya field diyebiliriz.
+	int id;
+	String name;
+	String description;
+	double price;
+	int stockAmount;
+}
