@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="FileLogger"/>
+    <fullyQualifiedTypeName name="EmailLogger"/>
+    <fullyQualifiedTypeName name="javax.xml.crypto.Data"/>
+    <fullyQualifiedTypeName name="ConsoleLogger"/>
+    <fullyQualifiedTypeName name="BaseLogger"/>
+    <fullyQualifiedTypeName name="DatabaseLogger"/>
+    <fullyQualifiedTypeName name="OgretmenKrediManager"/>
+    <fullyQualifiedTypeName name="TarimKrediManager"/>
+    <fullyQualifiedTypeName name="BaseKrediManager"/>
+    <fullyQualifiedTypeName name="OgrenciKrediManager"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="WomanGameCalculator"/>
+    <fullyQualifiedTypeName name="GameCalculator"/>
+    <fullyQualifiedTypeName name="CustomerManager"/>
+    <fullyQualifiedTypeName name="OracleDatabaseManager"/>
+    <fullyQualifiedTypeName name="SqlServerDatabaseManager"/>
+    <fullyQualifiedTypeName name="BaseDatabaseManager"/>
+    <fullyQualifiedTypeName name="MySqlDatabaseManager"/>
+</qualifiedTypeNameHistroy>

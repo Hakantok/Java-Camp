@@ -1,0 +1,11 @@
+
+public class ProductValidator {
+	public static boolean isValid(Product product) { // static dersek ProductValidator bir kez oluþturulur ve sadece bu kullanýlýr.
+		if(product.price > 0 && !product.name.isEmpty()) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+
+}

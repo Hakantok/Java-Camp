@@ -1,0 +1,6 @@
+
+public class GameCalculator {
+	public void hesapla(int tip) {
+		System.out.println("Puanýnýz : 100");
+	}
+}
